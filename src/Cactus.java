@@ -1,3 +1,4 @@
+// This is an 'arv' from abstract class Plant
 public class Cactus extends Plant {
     private static final double LIQUID_NEED_LITERS = 0.02;
 
@@ -5,7 +6,7 @@ public class Cactus extends Plant {
         super(name, heightInMeters);
     }
 
-    public double getFluidAmountInLiters() {
+    public double getLiquidAmountInLiters() {
         return LIQUID_NEED_LITERS;
     }
 

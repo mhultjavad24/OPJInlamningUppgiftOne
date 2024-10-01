@@ -5,7 +5,7 @@ public class CarnivorousPlant extends Plant {
         super(name, heightInMeters);
     }
 
-    public double getFluidAmountInLiters() {
+    public double getLiquidAmountInLiters() {
         return 0.1 + (LIQUID_NEED_LITERS_PER_METER * this.getHeightInMeters());
     }
 

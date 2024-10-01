@@ -1,4 +1,3 @@
-// This is an 'arv' from abstract class Plant
 public class Palm extends Plant {
     private static final double LIQUID_PER_METER = 0.5;
 
@@ -7,7 +6,7 @@ public class Palm extends Plant {
     }
 
     // 'Encapsulation' is used here to calculate the amount of water needed for the plant without exposing the heightInMeters variable
-    public double getFluidAmountInLiters() {
+    public double getLiquidAmountInLiters() {
         return LIQUID_PER_METER * super.getHeightInMeters();
     }
 

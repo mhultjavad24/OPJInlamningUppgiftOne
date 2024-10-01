@@ -31,7 +31,7 @@ public class Main {
             }
             if (matchingPlant != null) {
                 // 'Polymorphism' is used here. We can calculate the amount of liquid needed for the plant even though the class could be Cactus, Palm, or CarnivorousPlant
-                JOptionPane.showMessageDialog(null, "The plant " + matchingPlant.getName() + " needs " + matchingPlant.getFluidAmountInLiters() + " liters of " + matchingPlant.getLiquidType().name + " per day.");
+                JOptionPane.showMessageDialog(null, "The plant " + matchingPlant.getName() + " needs " + matchingPlant.getLiquidAmountInLiters() + " liters of " + matchingPlant.getLiquidType().name + " per day.");
             } else {
                 JOptionPane.showMessageDialog(null, "No plant found with the name " + name);
             }

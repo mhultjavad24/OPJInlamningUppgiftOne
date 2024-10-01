@@ -1,8 +1,8 @@
-// This is an 'interface' where Plant needs to implement requirements from FluidNeeds
-abstract public class Plant implements FluidNeeds {
+// This is an 'interface' where Plant needs to implement requirements from LiquidNeeds
+abstract public class Plant implements LiquidNeeds {
     private String name;
     private double heightInMeters;
-    public abstract double getFluidAmountInLiters();
+    public abstract double getLiquidAmountInLiters();
     public abstract LiquidType getLiquidType();
 
     public Plant(String name, double heightInMeters) {
