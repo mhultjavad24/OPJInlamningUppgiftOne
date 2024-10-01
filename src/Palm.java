@@ -5,10 +5,12 @@ public class Palm extends Plant {
         super(name, heightInMeters);
     }
 
+    @Override
     public double getLiquidAmountInLiters() {
         return LIQUID_PER_METER * super.getHeightInMeters();
     }
 
+    @Override
     public LiquidType getLiquidType() {
         return LiquidType.TAP_WATER;
     }

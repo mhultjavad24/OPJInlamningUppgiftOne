@@ -1,6 +1,6 @@
 // This uses an 'interface' where Plant needs to implement requirements from LiquidNeeds
 abstract public class Plant implements LiquidNeeds {
-    // 'Encapsulation' is used here to prevent via  mutating/renaming of the plant name, only constructor can set the name.
+    // 'Encapsulation' is used here with accessors to prevent mutating/renaming the name of plant, currently only constructor can set the name.
     private String name;
     private double heightInMeters;
     public abstract double getLiquidAmountInLiters();

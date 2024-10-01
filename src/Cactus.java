@@ -6,10 +6,13 @@ public class Cactus extends Plant {
         super(name, heightInMeters);
     }
 
+    // Method overriding is used here for 'polymorphism' purpose, this method originates from Plant, but is overridden here.
+    @Override
     public double getLiquidAmountInLiters() {
         return LIQUID_NEED_LITERS;
     }
 
+    @Override
     public LiquidType getLiquidType() {
         return LiquidType.MINERAL_WATER;
     }

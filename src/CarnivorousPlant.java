@@ -5,10 +5,12 @@ public class CarnivorousPlant extends Plant {
         super(name, heightInMeters);
     }
 
+    @Override
     public double getLiquidAmountInLiters() {
         return 0.1 + (LIQUID_NEED_LITERS_PER_METER * this.getHeightInMeters());
     }
 
+    @Override
     public LiquidType getLiquidType() {
         return LiquidType.PROTEIN_DRINK;
     }
