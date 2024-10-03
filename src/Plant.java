@@ -16,7 +16,7 @@ abstract public class Plant implements LiquidNeeds {
     }
 
     public boolean hasName(String name) {
-        return this.name.equalsIgnoreCase(name);
+        return this.name.equalsIgnoreCase(name.trim());
     }
 
     public double getHeightInMeters() {

@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class Greenest {
     public static void main(String[] args) {
 
         Plant igge = new Cactus("Igge", 0.2);
@@ -24,16 +24,17 @@ public class Main {
 
             Plant matchingPlant = null;
             for (Plant plant : plants) {
-                if (plant.hasName(name.trim())) {
+                if (plant.hasName(name)) {
                     matchingPlant = plant;
                     break;
                 }
             }
             if (matchingPlant != null) {
                 // 'Polymorphism' is used here. We can calculate the amount of liquid needed for the plant by method overriding, this works no matter the class could be Cactus, Palm, or CarnivorousPlant
-                JOptionPane.showMessageDialog(null, "The plant " + matchingPlant.getName() + " needs " + matchingPlant.getLiquidAmountInLiters() + " liters of " + matchingPlant.getLiquidType().name + " per day.");
+                String message = "The plant " + matchingPlant.getName() + " needs " + matchingPlant.getLiquidAmountInLiters() + " liters of " + matchingPlant.getLiquidType().name + " per day.";
+                JOptionPane.showMessageDialog(null, message);
             } else {
-                JOptionPane.showMessageDialog(null, "No plant found with the name " + name);
+                JOptionPane.showMessageDialog(null, "No plant at the hotel with name " + name);
             }
         }
     }
