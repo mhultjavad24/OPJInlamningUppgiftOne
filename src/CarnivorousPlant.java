@@ -1,5 +1,5 @@
 public class CarnivorousPlant extends Plant {
-    private static final double LIQUID_NEED_LITERS_PER_METER = 0.2;
+    private final double LIQUID_NEED_LITERS_PER_METER = 0.2;
 
     public CarnivorousPlant(String name, double heightInMeters) {
         super(name, heightInMeters);

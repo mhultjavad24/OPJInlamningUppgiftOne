@@ -5,11 +5,11 @@ import java.util.List;
 public class Greenest {
     public static void main(String[] args) {
 
+        List<Plant> plants = new ArrayList<>();
         Plant igge = new Cactus("Igge", 0.2);
         Plant laura = new Palm("Laura", 5);
         Plant meatloaf = new CarnivorousPlant("Meatloaf", 0.7);
         Plant olof = new Palm("Olof", 1);
-        List<Plant> plants = new ArrayList<>();
         plants.add(igge);
         plants.add(laura);
         plants.add(meatloaf);

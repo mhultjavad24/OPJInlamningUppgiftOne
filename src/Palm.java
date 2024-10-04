@@ -1,5 +1,5 @@
 public class Palm extends Plant {
-    private static final double LIQUID_PER_METER = 0.5;
+    private final double LIQUID_PER_METER = 0.5;
 
     public Palm(String name, double heightInMeters) {
         super(name, heightInMeters);
